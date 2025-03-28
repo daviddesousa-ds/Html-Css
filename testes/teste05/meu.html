@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        .principal{
+            list-style: none;
+            
+        }
+        
+        .principal li::before {
+            display: inline-block;
+            content: "• ";
+            font-size: 1em;
+            margin-right: -1px;   
+            vertical-align: middle;       
+            color: rgb(68, 67, 67);
+        }
+
+        
+        .principal{
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        
+        
+        .pergunta .opçao{
+            list-style: none;
+            background-color: aqua;
+            width: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px auto;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px rgb(0, 80, 80);
+            cursor: pointer;
+            position: relative;
+        }
+        .resposta{
+            display: none;
+            font-family: cursive;
+            color: red;
+            font-weight: bolder;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            margin-left: 10px;
+            position: absolute;
+        }
+        .opçao:hover .resposta{
+            display: block;
+        }
+        .win{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Agora sozinho</h1>
+
+    <h2>Faça uma questão aleatoria</h2>
+    
+    <ul class="principal">
+        <li>Quantas letras tem o nome David?</li>
+    </ul>
+
+    <ul class="pergunta">
+        <li class="opçao">
+            4 
+            <span class="resposta">Errado</span></li>
+        
+        <li class="opçao">
+            3
+             <span class="resposta">Errado</span></li>
+        
+        <li class="opçao">
+            5 
+            <span class="resposta win">Certo</span></li>
+        
+    </ul>
+</body>
+</html>

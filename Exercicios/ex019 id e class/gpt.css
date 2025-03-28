@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos das seções */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos específicos para AP e AD */
+.ap {
+    color: blue;
+    font-weight: bold;
+}
+
+.ad {
+    color: brown;
+    font-weight: bold;
+}
+
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
+/* Tornando a página responsiva */
+@media (max-width: 600px) {
+    section {
+        padding: 15px;
+    }
+}

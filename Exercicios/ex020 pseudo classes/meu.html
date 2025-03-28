@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção Hover</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #isolado {
+            color: wheat;
+            background-color: red;
+            border: 1px solid;
+            box-shadow: 1px 1px 2px rgb(157, 0, 0);
+            width: 200px;
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #principal li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aqua;
+            color: red;
+            border: 1px solid;
+            box-shadow: 1px 1px 1px rgba(185, 0, 0, 0.43);
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+            position: relative; /* Para que o elemento filho (.segundo) absoluto fique relativo a ele */
+        }
+
+        .segundo {
+            display: none;
+            font-style: italic;
+            font-weight: bolder;
+            position: absolute;
+            left: 0;  /* Agora começa no mesmo ponto do <li> */
+            top: 100%;  /* Fica logo abaixo do <li> */
+            background-color: gray;
+            border-radius: 5px;
+            padding: 5px 10px;
+            white-space: nowrap;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            width: max-content; /* Faz a largura se ajustar ao conteúdo */
+            z-index: 10;
+        }
+
+        #principal li:hover .segundo {
+            display: inline-block;
+        }
+        .vento{
+            color: blue;
+            background-color: rgb(92, 227, 227);
+        }
+        #principal li:hover{
+            background-color: rgb(3, 135, 135);
+        }
+        #isolado:hover{
+            background-color: rgb(72, 1, 1);
+            cursor: pointer;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Correção Hover</h1>
+    <ul>
+        <li id="isolado">Escolha uma mensagem</li>
+        <ul id="principal">
+            <li>Mensagem 01 <span class="segundo">Você Ganhou Nada</span></li>
+            <li>Mensagem 02 <span class="segundo">Não Ganhou Nada Aqui Também</span></li>
+            <li>Mensagem 03 <span class="segundo vento">Ganhou um Vento</span></li>
+        </ul>
+    </ul>
+</body>
+</html>

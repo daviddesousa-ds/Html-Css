@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rgb(54, 52, 52);
+            background-color: rgb(141, 117, 85);
+            text-align: center; 
+            width: 50%;
+            margin: 20px auto;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #pain {
+            font-style: italic;
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        #pai {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        #pai .filho {
+            font-style: italic;
+            list-style: none;
+            border: 1px solid red;
+            width: 80px;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(240, 240, 240);
+        }
+
+        #pai .filho:hover {
+            background-color: rgb(220, 220, 220);
+        }
+
+        /* Escondendo a resposta inicialmente */
+        .resposta {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+
+        /* Exibindo a resposta quando o mouse passar sobre o item */
+        #pai .filho:hover + .resposta {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Pergunta aleatória</h1>
+
+    <ul id="pain">
+        <li>Quantas Copas do Mundo o Brasil tem?</li>
+    </ul>
+
+    <ul id="pai">
+        <li class="filho">2</li>
+        <li class="filho">6</li>
+        <li class="filho">1</li>
+        <li class="filho">5</li>
+    </ul>
+
+    <!-- Resposta será exibida ao passar o mouse -->
+    <div class="resposta">A resposta correta é 5!</div>
+
+</body>
+</html>

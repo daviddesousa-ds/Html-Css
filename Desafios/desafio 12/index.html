@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 12</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            font-family: "Passion One", sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            padding-bottom: -20px;
+        }
+        header p{
+            font-size: 12px;
+        }
+        .negrito{
+            font-weight: bold;
+        }
+        main p{
+            font-family: "Sriracha", cursive;
+            line-height: 32px;
+        }
+        main div.bio-p{
+            display: inline-block;
+            margin: 5px;
+            padding: 13px;
+            padding-bottom: 44px;
+            padding-top: 44px;
+            font-family: "Sriracha", cursive;
+            line-height: 32px;
+        }
+        img{
+            max-width: 100%; /* Garante que a imagem nunca seja maior que a largura da tela */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove espaços extras abaixo da imagem */
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+        .imagem{
+            position: relative; /* Define um contexto para o posicionamento */
+            display: inline-block; /* Faz com que a div só ocupe o espaço da imagem */
+            max-width: 100%;  /* Garante que a imagem não ultrapasse a tela */
+            overflow: hidden; /*evita que elementos saiam da div*/
+        }
+        .imagem img{
+            width: 100%; /* Ajusta a imagem para ocupar a largura do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block;
+        }
+        .cima-p{
+            position: absolute; /* Mantém o texto sobre a imagem */
+            top: 50%; /* Centraliza verticalmente */
+            left: 35%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta para o centro */
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+            opacity: 1;
+            color: white; /* Texto branco */         
+            border-radius: 5px;
+            text-align: center;
+            width: 60%; /* Diminui a largura da caixa */
+            max-width: 300px; /* Define um limite máximo */
+            font-size: 14px; /* Reduz o tamanho da fonte */
+            padding: 8px; /* Ajusta o espaçamento interno */
+            
+            box-sizing: border-box; /* Evita que padding e bordas aumentem o tamanho */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cordel Mordeno</h1>
+        <p>Por <span class="negrito">Milton Duarte</span></p>
+    </header>
+
+    <main>
+        <div class="bio-p">
+            <p>Estou ficando cansado</p>
+            <p>Da tal tecnologia</p>
+            <p>Só se fala por e-mail</p>
+            <p>Mensagem curta e fria</p>
+            <p>Twitter e Facebook</p>
+            <p>Antes que eu caduque</p>
+            <p>Vou dizer tudo em poesia.</p>
+        </div>
+            <div class="imagem">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="imagens/flor1500.jpg">
+                    <img src="imagens/flo1500.jpg" alt="">
+                </picture>
+                <div class="cima-p">
+                    <p>Não é mais como era antes</p>
+                    <p>É tudo abreviado</p>
+                    <p>"Você" só tem duas letras</p>
+                    <p>O "O" e o "E" foi riscado</p>
+                    <p>Para declarar o amor</p>
+                    <p>Basta botar uma flor</p>
+                    <p>E um coração desenhado.</p>
+                </div>
+            </div>
+        <br>
+
+        <div class="bio-p">
+            <p>Arroba agora não pesa</p>
+            <p>É parte de um endereço</p>
+            <p>Ponto final nem se usa</p>
+            <p>Ou vai até no começo</p>
+            <p>Agora é .com</p>
+            <p>Se o saite é muito bom</p>
+            <p>Ele vale um alto preço.</p>
+        </div>
+        <br>
+
+        <div class="bio-p">
+            <p>Pra piorar a liguagem</p>
+            <p>O emoticom é um risco</p>
+            <p>Tem símbolo para tudo</p>
+            <p>onto e vírgula e um asterisco</p>
+            <p>Um beijo significa</p>
+            <p>Pra entender como fica</p>
+            <p>Decifre esse rabisco.</p>
+       </div>
+    </main>
+    
+</body>
+</html>

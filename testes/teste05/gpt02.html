@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .pain {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            list-style: disc;
+            list-style-position: inside;
+        }
+
+        .pain li::marker {
+            content: "• ";
+            font-size: 1.2em;
+        }
+
+        .pai {
+            display: block; /* Tornando o layout vertical */
+            text-align: center;
+        }
+
+        .filho {
+            background-color: gray;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid rgb(39, 39, 39);
+            width: 200px; /* Largura das caixas */
+            margin: 10px auto; /* Margem automática para centralizar */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px black;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Aumenta o tamanho da caixa do Guepardo */
+        .filho.guepardo {
+            width: 250px; /* Aumenta a largura dessa caixa */
+        }
+
+        .resposta {
+            display: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px black;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .win {
+            color: green;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .filho:hover {
+            color: aqua;
+            background-color: blue;
+        }
+
+        .filho:hover .resposta {
+            display: block;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .filho {
+                width: 70%; /* Ajusta o tamanho das caixas em telas médias */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filho {
+                width: 90%; /* Ajusta o tamanho para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Apenas mais um teste</h1>
+    <h2>Marque a alternativa correta</h2>
+
+    <ul class="pain">
+        <li>Quanto é 5+5?</li>
+    </ul>
+    <ul class="pai">
+        <li class="filho">
+            8
+            <span class="resposta">Errou</span>
+        </li>
+        <li class="filho">
+            7
+            <span class="resposta">Errou</span>
+        </li>
+        <li class="filho">
+            10
+            <span class="resposta win">Acertou</span>
+        </li>
+    </ul>
+
+    <ul class="pain">
+        <li>Quantos dedos uma pessoa tem?</li>
+    </ul>
+    <ul class="pai">
+        <li class="filho">
+            4
+            <span class="resposta">Errado</span>
+        </li>
+        <li class="filho">
+            20
+            <span class="resposta win">Acertou</span>
+        </li>
+        <li class="filho">
+            18
+            <span class="resposta">Errou</span>
+        </li>
+    </ul>
+
+    <ul>
+        <li class="pain">Qual animal é mais rápido?</li>
+    </ul>
+    <ul class="pai">
+        <li class="filho">
+            Leão
+            <span class="resposta">Errado</span>
+        </li>
+        <li class="filho guepardo">
+            Guepardo
+            <span class="resposta win">Acertou</span>
+        </li>
+        <li class="filho">
+            Onça
+            <span class="resposta">Errado</span>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: rgb(54, 52, 52);
+            background-color: gray;
+            text-align: center; 
+            width: 50%; /* Define uma largura para o h1 */
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 5px;
+        }
+        #pain{
+            font-style: italic;
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        #pai {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px; /* Reduzi o espaço entre a pergunta e as opções */
+        }
+        
+        #pai .filho{
+            background-color: rgb(165, 156, 156);
+            color: gold;
+            margin: auto;
+            font-style: italic;
+            list-style: none;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.411);
+            box-shadow: 1px 1px 2px black;
+            cursor: pointer;
+            width: 80px;
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+            transition: background-color 0.3s ease-in-out;
+        }
+        #pai .filho:hover{
+            background-color: rgb(77, 75, 75);
+        }
+        .resposta{
+            display:none;
+            font-family: monospace;
+            color: red;
+        }
+        #pai .filho:hover + .resposta{
+            display: block;
+        }
+        .win{
+            color: green;
+            
+        }
+        #pai .filho:active{
+            color: red;
+        }
+        #pain::after{
+            content: '👉';
+        }
+
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pergunta aleatoria</h1>
+    <ul id="pain" >
+        <li>Quantas copa do mundo o Brasil tem?</li>
+    </ul>
+        <ul id="pai">
+            <li class="filho">2</li>
+            <span class="resposta">Errado</span>
+            <li class="filho">6</li>
+            <span class="resposta">Errado</span>
+            <li class="filho">1</li>
+            <span class="resposta">Errado</span>
+            <li class="filho">5</li>
+            <span class="resposta win">Acertou</span>
+        </ul>
+    
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h2{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    text-align: justify;
+}
+h4{
+    color: rgb(233, 0, 89);
+    font-family: fantasy;
+}
+a{
+    color: darkgreen;
+}

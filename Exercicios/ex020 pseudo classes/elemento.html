@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento</title>
+    <style>
+    .lista {
+    list-style: none;
+    padding: 0;
+    }
+
+    .lista li {
+        position: relative;
+        padding: 10px;
+        background-color: #f0f0f0;
+        margin: 5px 0;
+        cursor: pointer;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .mensagem-oculta {
+        display: none; /* Esconde a mensagem inicialmente */
+        position: absolute;
+        left: 100%; /* Posição ao lado do item */
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+
+    .lista li:hover .mensagem-oculta {
+        display: inline-block; /* Aparece ao passar o mouse */
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo elemento</h1>
+    <h2>Vou criar uma lista para usar alguns hover</h2>
+    <ul class="lista">
+        <li>
+            Item 1
+            <span class="mensagem-oculta">Mensagem secreta 1</span>
+        </li>
+        <li>
+            Item 2
+            <span class="mensagem-oculta">Mensagem secreta 2</span>
+        </li>
+        <li>
+            Item 3
+            <span class="mensagem-oculta">Mensagem secreta 3</span>
+        </li>
+    </ul>
+</body>
+</html>

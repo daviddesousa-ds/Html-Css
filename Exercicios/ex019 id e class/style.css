@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'principal';
+    src: url('fonts/chinese\ rocks\ rg.otf') format('opentype');
+}
+@font-face {
+    font-family: 'anime';
+    src: url('fonts/animeace2_bld.otf') format(opentype);
+    font-size: 10px;
+}
+body{
+    background-color: rgba(131, 131, 204, 0.74);
+    text-align: center;
+}
+#principal{
+    font-family: 'principal', sans-serif;
+    color: rgb(65, 62, 62);
+}
+
+.basico{
+    font-family: 'anime', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 110);
+}
+h3{
+    font-family: 'anime', sans-serif;
+    font-size: 16px;
+    color: rgba(123, 0, 180, 0.719);
+}
+.seg{
+    font-family: 'anime', sans-serif;
+    color: rgb(65, 62, 62);
+    font-size: 20px;
+}
+.destaque{
+    color: red;
+}

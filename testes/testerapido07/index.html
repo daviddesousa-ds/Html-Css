@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'anime';
+            src: url('fonts/animeace2_bld.otf') format('opentype');
+        }
+        h1{
+            font-family: 'anime';
+            font-size: 27px;
+        }
+        .primeiro{
+            list-style-type: none;
+            list-style-position: outside;             
+        }
+        .primeiro li{
+            text-indent: -10px; /* Move apenas a bolinha para a esquerda */
+            padding-left: 15px; /* Mantém o texto no lugar certo */
+            position: relative;
+        }
+        .primeiro li::before {
+            content: "•"; /* Adiciona uma bolinha manualmente */
+            position: absolute; /* Permite posicionamento exato */
+            left: 506px; /* Ajusta a posição sem afetar o texto */
+            top: -2px; /* Alinha corretamente com o texto */
+            color: rgb(185, 0, 0); /* Cor da bolinha */
+            font-size: 1.2em; /* Tamanho da bolinha */
+        }       
+        .segundo .terceiro{
+            list-style-type: none;
+            color: greenyellow;
+            background-color: green;
+            width: 50px;
+            margin: 10px auto;
+            padding: 5px;
+            border-radius: 19px;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 1px 1px 2px green;
+            cursor: pointer;
+            position: relative;
+        }
+        .quarto{
+            display: none;
+            color: brown;
+            background-color: aqua;
+            border: 1px dashed;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            padding-bottom: 5px;
+            margin-left: -25px;
+            padding-top: 0px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px  rgb(110, 0, 0);
+            white-space: nowrap;
+        }
+        .terceiro:hover .quarto{
+            display: block;
+       }      
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    <ol class="primeiro">
+        <li>passe o mouse em cima disso ai embaixo</li>
+    </ol>
+    <ol class="segundo">
+        <li class="terceiro">aqui
+        <span class="quarto">isso mesmo</span>
+         </li>
+    </ol>   
+</body>
+</html>

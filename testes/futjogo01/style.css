@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to right,#28EB62,#EBDA28,#ACEB76);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    color: #1ebd16;
+    text-shadow: 1px 1px 2px #10720b;
+
+}
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+main{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#ACEB76;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 3px 3px 4px  #5e8040c7;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+}

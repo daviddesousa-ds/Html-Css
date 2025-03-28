@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <h3>Tente abrir esse site em varios dipositivos diferentes</h3>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/Foto-PP.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/Foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Foto-M.png" type="image/png">
+        <img src="imagens/Foto-G.png" alt="Imagem flexivel">
+    </picture>
+    <hr>
+    <h3>Teste de audio</h3>
+    <audio preload="auto" autoplay controls>
+        <source src="" type="">
+        <source src="midia/vinhei.mp3" type="audio/mpeg">
+        <source src="midia/vinhei.ogg" type="audio/ogg">
+        <p>Infelizmente o navegador não consegue reproduzir o audio.<a href="midia/vinhei.mp3"></a>clique aqui para baixar o audio</p>
+    </audio>
+
+    
+</body>
+</html>

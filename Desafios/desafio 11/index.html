@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Faz a página ocupar 100% da tela */
+        html, body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; /* Impede rolagem desnecessária */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Faz a imagem de fundo cobrir toda a tela */
+        #espaco {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Mantém no fundo */
+        }
+
+        /* Ajuste do astronauta */
+        #austro {
+            position: absolute;
+            width: 20vw; /* Usa porcentagem da largura da tela */
+            max-width: 200px; /* Define um tamanho máximo */
+            min-width: 100px; /* Define um tamanho mínimo */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/espaco1800.jpg" alt="Imagem do espaço com estrelas e galáxias" id="espaco">
+    <img src="imagens/astronauta.png" alt="Astronauta flutuando no espaço" id="austro">
+</body>
+</html>

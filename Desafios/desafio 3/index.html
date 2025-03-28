@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        .all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Mudei para flex-start para evitar centralizar tudo */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .all img {
+            width: 200px; /* Largura fixa das imagens */
+            height: 130px; /* Altura fixa das imagens */
+        }
+
+        /* Caso você queira um controle mais específico em telas menores */
+        @media (max-width: 768px) {
+            .all img {
+                width: 150px; /* Ajuste da largura para telas menores */
+                height: 100px; /* Ajuste da altura para telas menores */
+            }
+        }
+
+        /* Ajustes adicionais para telas pequenas */
+        @media (max-width: 480px) {
+            .all img {
+                width: 100px; /* Ajuste ainda maior em telas muito pequenas */
+                height: 80px;
+            }
+        }
+        .mapa01{
+            margin-left: 20px;
+        }
+        .mapa02{
+            margin-left: 20px;
+        }
+        .mapa03{
+            margin-right: 100px;
+        }
+        .mapa04{
+            margin-left: 20px;
+        }
+        .mapa05{
+            margin-left: 20px;
+        }
+        .mapa06{
+            margin-right: 100px;
+        }
+        .mapa07{
+            margin-left: 20px;
+        }
+        .mapa08{
+            margin-left: 20px;
+        }
+        .mapa09{
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Desafio do Mapa</h1>
+    <p>Agora chegou a hora de treinar as imagens</p>
+    <div class="all">
+        <img src="imagens/mapa01.png" alt="mapa01" class="mapa01">
+        <img src="imagens/mapa02.png" alt="mapa02" class="mapa02">
+        <img src="imagens/mapa03.png" alt="mapa03" class="mapa03">
+        <img src="imagens/mapa04.png" alt="mapa04" class="mapa04">
+        <img src="imagens/mapa05.png" alt="mapa05" class="mapa05">
+        <img src="imagens/mapa06.png" alt="mapa06" class="mapa06">
+        <img src="imagens/mapa07.png" alt="mapa07" class="mapa07">
+        <img src="imagens/mapa08.png" alt="mapa08" class="mapa08">
+        <img src="imagens/mapa09.png" alt="mapa09" class="mapa09">
+    </div>
+</body>
+</html>
