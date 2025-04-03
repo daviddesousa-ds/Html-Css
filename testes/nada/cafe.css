@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom,#b89d80,#695a3e);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+header{
+    text-align: center;
+    background-color: #401202;
+    padding: 15px;
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.37);
+}
+header h1{
+    color: white;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.596);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    background-color: #F2D8A7;
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.336);
+}
+main h2{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    padding: 5px;
+    
+}
+.text-p p + p {
+    margin-top: 20px; /* Ajuste o valor conforme desejar */
+}
+.image-container {
+    display: flex; 
+    gap: 20px; /* Espaço entre as imagens */
+    max-width: 100%; /* Permite que o contêiner ocupe a tela toda */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
+.image-container img {
+    width: 300px; /* Mantém um tamanho fixo */
+    height: auto; /* Mantém a proporção */
+}
+
+
+
+img{
+    margin-bottom: 20px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 1px 7px 7px rgba(54, 54, 54, 0.192);
+
+}
+.pipoca2{
+    width: 341px;
+    height: 258px;
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: 45%; /* Quando a tela ficar menor que 768px, cada imagem ocupa 45% da largura */
+    }
+}
+
+@media (max-width: 400px) {
+    .image-container img {
+        width: 90%; /* Quando a tela for menor que 400px, as imagens vão ocupar 90% da largura */
+    }
+}
+
+
+

@@ -25,18 +25,19 @@ header p{
 
 #nav-link{
     text-align: left;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 25px;
 }
 
 nav > a{
-    margin-right: 30px;
+    font-size: 12px;
+    margin-right: 20px;
     color: rgb(181, 220, 255);
     text-decoration: none;
     text-shadow: 1px 1px 2px black;
-    padding: 3px;
+    padding: 1px;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
 }
 
 #nav-link a:hover{
@@ -49,6 +50,9 @@ nav > a{
 main{
     padding: 50px;
 }
+section{
+    margin-bottom: 80px;
+}
 
 section h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -56,6 +60,8 @@ section h2{
     margin-bottom: 10px;
 }
 .text-p{
+    line-height: 25px;
+    margin-top: 5px;
     text-align: justify;
     text-indent: 30px;
     margin-bottom: 20px;
@@ -79,6 +85,7 @@ section h2{
 
 
 img{
+    margin-bottom: 20px;
     max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
     height: auto;
     border-radius: 2px;
@@ -98,7 +105,30 @@ img{
 
 @media (max-width: 400px) {
     .image-container img {
-        width: 90%; /* Quando a tela for menor que 500px, as imagens vão ocupar 90% da largura */
+        width: 90%; /* Quando a tela for menor que 400px, as imagens vão ocupar 90% da largura */
     }
 }
+hr{
+    width: 800px;
+}
 
+article{
+    padding: 10px;
+}
+article h3{
+    color: rgb(85, 85, 85);
+}
+.mais{
+    padding: 20px;
+}
+
+article a{
+    text-decoration: none;
+}
+ article li{
+    margin-left: 5px;
+    padding: 5px;
+ }
+ .primeiro{
+    margin-left: -15px;
+ }
