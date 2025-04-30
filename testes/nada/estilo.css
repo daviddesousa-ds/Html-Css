@@ -51,3 +51,41 @@ main p{
     min-width: 300px;
     line-height: 25px;
 }
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.principal h2{
+    color: red;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    border-radius: 4px;
+    width: 600px;
+}
+div.video {
+    background-color: green;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+ }
